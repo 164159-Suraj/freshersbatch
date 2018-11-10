@@ -1,0 +1,25 @@
+<html>
+<head><title>Printing asterisks</title>
+</head>
+<body>
+<script>
+
+var c=0;
+var i;
+while(c<3)
+{
+    var x=parseInt(prompt("Enter a number between 1 to 30","Enter..."));
+   if(x>=1 && x<=30)
+      {
+         for(i=1;i<=x;i++)
+            document.write("*");
+ document.write('<br/>');
+        
+      c++;
+       }
+    else
+        alert("Kindly give a number between 1 to 30");
+}
+</script>
+</body>
+</html>

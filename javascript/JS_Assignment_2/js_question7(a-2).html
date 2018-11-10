@@ -1,0 +1,144 @@
+<html>
+<head><title>Iteration and Looping</title>
+<script>
+var jhonobject={
+        bill1:[],
+        
+       calculatetip1: function(x1){
+                         this.bill1=x1;
+                          var tip1=[];
+                          var billpaid1=[];
+                          var sum1=0;
+                          
+                         for(i=0;i<x1.length;i++)
+                            {
+                                
+                               if(x1[i]<50)
+                                  {
+                                    tip1[i]=x1[i]*0.2;
+                                   }
+                                if(x1[i]>50 && x1[i]<200)
+                                   {
+                                      tip1[i]=x1[i]*0.15;
+                                    }
+                                if(x1[i]>200)
+                                   {
+                                      tip1[i]=x1[i]*0.1;
+                                    }
+                                 }
+                          document.write("Tips given by jhon are:");
+                         document.write('<br/>');
+
+                            for(i=0;i<x1.length;i++)
+                              {
+                                document.write(tip1[i]+" ");
+                                sum1+=tip1[i]
+                               }
+                       
+
+                           for(i=0;i<x1.length;i++)
+
+                               {
+                                  billpaid1[i]=tip1[i]+x1[i];
+                                }
+                         document.write('<br/>');
+                        document.write("Total bills paid by Jhon's family in each cases:");
+                      
+                       for(i=0;i<x1.length;i++)
+                           {
+                               document.write(billpaid1[i]+" ");
+                              
+                             }
+                        document.write('<br/>');
+                        document.write("Average tip of Jhon's family is:"+sum1/x1.length);
+                        document.write('<br/>');
+                       }
+              };
+
+
+var markobject={
+        bill2:[],
+       calculate_tip2: function(x2){
+                         this.bill2=x2;
+                          var tip2=[];
+                          var billpaid2=[];
+                          var sum2=0;
+                          
+                         for(i=0;i<x2.length;i++)
+                            {
+                                
+                               if(x2[i]<100)
+                                  {
+                                    tip2[i]=x2[i]*0.2;
+                                   }
+                                if(x2[i]>100 && x2[i]<300)
+                                   {
+                                      tip2[i]=x2[i]*0.1;
+                                    }
+                                if(x2[i]>300)
+                                   {
+                                      tip2[i]=x2[i]*0.25;
+                                    }
+                                 }
+                          document.write('<br/>');
+                          document.write("Tips given by mark are:");
+                         document.write('<br/>');
+
+                            for(i=0;i<x2.length;i++)
+                              {
+                                document.write(tip2[i]+" ");
+                                sum2+=tip2[i];
+                               }
+                       
+
+                           for(i=0;i<x2.length;i++)
+
+                               {
+                                  billpaid2[i]=tip2[i]+x2[i];
+                                }
+                         document.write('<br/>');
+                        document.write("Total bills paid by Mark's family in each cases:");
+                       
+ 
+                       for(i=0;i<x2.length;i++)
+                           {
+                               document.write(billpaid2[i]+" ");
+                              
+                             }
+                         document.write('<br/>');
+                         document.write("Average tip of Marks's family is:"+sum2/x2.length);
+                         document.write('<br/>');
+                    }
+              };
+
+</script>
+</head>
+<body>
+<script>
+  var b1=[124,48,268,180,42];
+   var b2=[77,375,110,45];
+  jhonobject.calculatetip1(b1);
+  markobject.calculate_tip2(b2);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     

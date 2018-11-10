@@ -1,0 +1,53 @@
+<html>
+<head><title>Object implementation</title>
+<script>
+var markobject={
+          name:"Mark",
+          mass:0,
+          height:0,
+          BMI_calculator: function(m1,h1){
+                               this.mass=m1;
+                               this.height=h1;
+                           return (m1)/(h1*h1);
+                           }    
+
+          };
+</script>
+</head>
+<body>
+
+
+
+<script>
+var m11=parseInt(prompt("Enter the mass of Mark","enter..."));
+var h11=parseInt(prompt("Enter the height of Mark","enter..."));
+var m12=parseInt(prompt("Enter the mass of Mark","enter..."));
+var h12=parseInt(prompt("Enter the height of Mark","enter..."));
+
+markobject.mass=m11;
+markobject.height=h11;
+markobject.mass=m12;
+markobject.height=h12;
+
+var x=markobject.BMI_calculator(m11,h11);
+var y=markobject.BMI_calculator(m12,h12);
+
+document.write("The BMI of Mark is:  "+x);
+document.write('<br/>');
+
+
+document.write("The BMI of Jhon is:  "+y);
+document.write('<br/>');
+
+if(x>y)
+ document.write("Mark's BMI is more than Jhon's!");
+
+else if(y>x)
+ document.write("Jhon's BMI is more than Mark's!");
+
+else
+ document.write("Jhon and Mark has Equal BMI");
+
+</script>
+</body>
+</html>
