@@ -1,0 +1,25 @@
+package com.suraj_mitra.ds;
+
+public class Main {
+	public static void main(String[] args) {
+		int array[] = { 300, 100, 700, 400, 200 };
+		for (int i : array) {
+			
+		}
+	}
+
+	int[] desc(int a[]) {
+		int temp;
+		for (int index = 0; index < a.length; index++) {
+			for (int index1 = 0; index1 < a.length - index - 1; index1++) {
+				if (a[index1] < a[index1 + 1]) {
+					temp = a[index1];
+					a[index1] = a[index1 + 1];
+					a[index1 + 1] = temp;
+				}
+			}
+
+		}
+		return a;
+	}
+}

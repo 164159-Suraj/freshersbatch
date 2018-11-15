@@ -1,0 +1,42 @@
+
+public class BankAccount {
+//static variable
+private static int autoAccountNo;
+
+//instance variable/ class variable
+private int accountNo;
+private String accountHolderName;
+private double accountBalance;
+
+
+
+//init Block
+//Before constructor execution init Block Executes
+{
+	  accountNo=++autoAccountNo;
+	  System.out.println("init block");
+}
+
+
+//default constructor
+public BankAccount(){
+	
+	accountHolderName="Unknow";
+	accountBalance=0;
+	System.out.println("default constructor");
+ }
+//constructor overloading
+
+
+//parameterized constructor
+public BankAccount(String  accountHolderName,double accountBalance){
+	
+	this.accountHolderName= accountHolderName;
+	this.accountBalance=accountBalance;
+	System.out.println("parameterized constructor");
+   }
+public static void main(String[] args){
+	BankAccount acc1=new BankAccount();
+	BankAccount acc2=new BankAccount("Suraj",5000);
+}
+}

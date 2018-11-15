@@ -1,0 +1,27 @@
+package com.suraj_mitra.ds;
+import java.util.Scanner;
+public class Question7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner ac=new Scanner(System.in);
+int arr[]=new int[15];
+System.out.println("Enter values to the array:");
+for(int i=0;i<arr.length;i++){
+	arr[i]=ac.nextInt();
+}
+System.out.println("The values in the array are:");
+for(int i=0;i<arr.length;i++){
+System.out.print(arr[i]+" ");
+}
+System.out.println("Enter the number you want to find:");
+int num=ac.nextInt();
+for(int i=0;i<arr.length;i++){
+	if(num==arr[i]){
+		System.out.println("Element found");
+		break;
+	}
+}
+	}
+
+}

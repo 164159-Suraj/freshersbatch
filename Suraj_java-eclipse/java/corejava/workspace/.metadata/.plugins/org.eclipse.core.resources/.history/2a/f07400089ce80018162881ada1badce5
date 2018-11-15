@@ -1,0 +1,63 @@
+package com.suraj_mitra.ds;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		int array[] = { 300, 100, 700, 400, 200 };
+		//int[] A = Ascending(array);
+		
+		int[] B = new Test().Descending(array);
+		
+     //  System.out.println("The ascending Order is :");
+		/*for (int index = 0; index < A.length; index++) {
+			System.out.print(A[index] + " ");
+		}*/
+		System.out.println();
+		System.out.println("The descending Order is :");
+		for (int index = 0; index < B.length; index++) {
+			System.out.print(B[index] + " ");
+		}
+		System.out.println();
+		for (int index = 0; index < array.length; index++) {
+			System.out.print(array[index] + " ");
+		}
+	}
+
+	
+	
+/*	static int[] Ascending(int arr[]) {
+		int temp;
+		for (int index = 0; index < arr.length; index++) {
+			for (int index1 = 0; index1 < arr.length - index - 1; index1++) {
+				if (arr[index1] > arr[index1 + 1]) {
+					temp = arr[index1];
+					arr[index1] = arr[index1 + 1];
+					arr[index1 + 1] = temp;
+				}
+			}
+
+		}
+		return arr;
+
+	}*/
+	
+	
+	
+	static int[] Descending(int arr[]) {
+		int temp;
+		for (int index = 0; index < arr.length; index++) {
+			for (int index1 = 0; index1 < arr.length - index - 1; index1++) {
+				if (arr[index1] < arr[index1 + 1]) {
+					temp = arr[index1];
+					arr[index1] = arr[index1 + 1];
+					arr[index1 + 1] = temp;
+				}
+			}
+
+		}
+		return arr;
+
+	}
+
+}

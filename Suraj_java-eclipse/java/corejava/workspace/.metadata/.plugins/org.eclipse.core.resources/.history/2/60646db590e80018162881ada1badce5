@@ -1,0 +1,33 @@
+package com.suraj_mitra.ds;
+import java.util.Scanner;
+public class Question6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner ac=new Scanner(System.in);
+String name="Suraj",name1;
+int password=1234,password1;
+//name1=ac.next();
+//password1=ac.nextInt();
+/*int c=0;
+while(c<3){
+	System.out.println("Enter Name");
+	name1=ac.next();
+	System.out.println("Enter Password");
+	password1=ac.nextInt();
+	if(name1.compareTo(name)==0 && password1==password){
+		System.out.println("Welcome"+" "+name1);
+		break;
+	}
+	else{
+		c++;
+	}
+}*/
+String s1="suraj";
+String s2="Suraj";
+if(s1==s2){
+	System.out.print("Yes!");
+}
+	}
+
+}
