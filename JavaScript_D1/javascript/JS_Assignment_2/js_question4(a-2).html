@@ -1,0 +1,96 @@
+<html>
+<head><title>Average score</title>
+</head>
+<body>
+<script>
+var g11=89;
+var g12=120;
+var g13=103;
+
+var g21=116;
+var g22=94;
+var g23=123;
+
+var g31=97;
+var g32=134;
+var g33=105;
+
+var avg1=(g11+g12+g13)/3;
+var avg2=(g21+g22+g23)/3;
+var avg3=(g31+g32+g33)/3;
+var i;
+
+if(avg1>avg2 && avg1>avg3)
+  {
+ document.write("jhon's team average score is higher than other two teams:"+avg1);
+      document.write('<br/>');
+ }
+
+else if(avg2>avg1 && avg2>avg3)
+ {
+  document.write("mike's team average score is higher than other two teams:"+avg2);
+   document.write('<br/>'); 
+}
+
+else if(avg3>avg1 && avg3>avg2)
+ {
+  document.write("marry's team average score is higher than the other two teams:"+avg3);
+   document.write('<br/>'); 
+}
+else
+{
+ document.write("All teams have same average score and the score is a draw");
+  document.write('<br/>');
+}
+
+for(i=1;i<=3;i++)
+{
+  g11=Math.floor((Math.random() * 200) + 1);
+  g12=Math.floor((Math.random() * 200) + 1);
+  g13=Math.floor((Math.random() * 200) + 1);
+  avg1=(g11+g12+g13)/3;
+
+  g21=Math.floor((Math.random() * 200) + 1);
+  g22=Math.floor((Math.random() * 200) + 1);
+  g23=Math.floor((Math.random() * 200) + 1);
+  avg2=(g11+g12+g13)/3;
+
+  g31=Math.floor((Math.random() * 200) + 1);
+  g32=Math.floor((Math.random() * 200) + 1);
+  g33=Math.floor((Math.random() * 200) + 1);
+  avg1=(g31+g32+g33)/3;
+
+
+
+
+
+
+  if(avg1>avg2 && avg1>avg3)
+{
+ document.write("jhon's team average score is higher than other two teams:"+avg1);
+ document.write('<br/>');
+}
+
+else if(avg2>avg1 && avg2>avg3)
+{
+ document.write("mike's team average score is higher than other two teams:"+avg2);
+ document.write('<br/>');
+}
+
+else if(avg3>avg1 && avg3>avg2)
+{ 
+ document.write("marry's team average score is higher than the other two teams:"+avg3);
+ document.write('<br/>');
+}
+else
+{
+ document.write("All teams have same average score and the score is a draw");
+ document.write('<br/>');
+}
+
+
+}
+
+</script>
+</body>
+</html>

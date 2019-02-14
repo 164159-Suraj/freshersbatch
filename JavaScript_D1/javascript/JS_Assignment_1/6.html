@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Two functions</title>
+<script>
+function AddZeros(i)
+{
+if(i<10){
+   i="0"+i;
+}
+return i;
+}
+
+function Time()
+{
+ var currentTime=new Date();
+ var hours=currentTime.getHours();
+ var minutes=currentTime.getMinutes();
+ var seconds=currentTime.getSeconds();
+ hours=AddZeros(hours);
+ minutes=AddZeros(minutes);
+ seconds=AddZeros(seconds);
+ document.write("hours:"+hours+"minutes:"+minutes+"seconds:"+seconds);
+}
+</script>
+</head>
+<body onload="Time()">
+</body>
+</html>
