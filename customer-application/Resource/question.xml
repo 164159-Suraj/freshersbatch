@@ -1,0 +1,33 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="question" class="com.suraj.springassignment.customer_application.Question">
+<property name="questionId" value="275"/>
+<property name="question" value="Char"/>
+<property name="answers">
+	<list>
+		<value>A</value>
+		<value>B</value>
+		<value>C</value>
+		<value>D</value>
+	</list>
+</property>
+<property name="answerSet">
+	<set>
+		<value>A</value>
+		<value>B</value>
+		<value>C</value>
+		<value>D</value>
+	</set>
+</property>
+<property name="answerMap">
+	<map>
+		<entry key="1" value="A"/>
+		<entry key="2" value="B"/>
+		<entry key="3" value="C"/>
+		<entry key="4" value="D"/>
+	</map>
+</property>
+</bean>
+</beans> 

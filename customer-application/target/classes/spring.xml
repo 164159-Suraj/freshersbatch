@@ -1,0 +1,42 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- <beans> <bean id="customer" class="com.suraj.springassignment.customer_application.Customer"> 
+	<property name="customerName" value="SURAJ" ></property> <property name="customerContact" 
+	value="98564" ></property> <property name="customerAddress" ref="address" 
+	></property> <property name="customerId" value="123" ></property> <constructor-arg 
+	ref = "address"/> </bean> <bean id="address" class="com.suraj.springassignment.customer_application.Address"> 
+	<property name="street" value="BTM" ></property> <property name="city" value="BANGLORE" 
+	></property> <property name="state" value="KARNATAKA" ></property> <property 
+	name="country" value="INDIA" ></property> <property name="zip" value="75100" 
+	></property> </bean> </beans> -->
+
+
+<beans>
+
+	<bean id="customer"
+		class="com.suraj.springassignment.customer_application.Customer">
+
+		<constructor-arg index="0" value="SURAJ" />
+		<constructor-arg index="3" value="98564" />
+		<constructor-arg index="1" ref="address" />
+		<constructor-arg index="2" value="123" />
+
+
+
+	</bean>
+
+
+	<bean id="address" class="com.suraj.springassignment.customer_application.Address">
+
+		<constructor-arg index="0" value="BTM" />
+		<constructor-arg index="1" value="BANGLORE" />
+		<constructor-arg index="2" value="KARNATAKA" />
+		<constructor-arg index="3" value="INDIA" />
+		<constructor-arg index="4" value="75100" />
+	</bean>
+</beans>
+
+
+
